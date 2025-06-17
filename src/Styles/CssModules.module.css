@@ -1,0 +1,25 @@
+
+.para{
+    background-color: brown;
+    color: white;
+    padding:50px;
+
+}
+
+.hadding{
+    background-color: black;
+    color:orange;
+    border: 5px solid darkgoldenrod;
+}
+.form{
+    padding: 50px;
+    display:flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 3px grey;
+    
+}

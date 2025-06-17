@@ -1,0 +1,86 @@
+React JS: Relatively easier to learn for developers familiar with javaScript
+Node.js: can have a steeper learning curve due to its server-side nature and
+
+Pascal case ----- ClassComponent.js
+camel case ----- classComponent.js
+
+Q. Convert a simple class to react classComponent
+Syntex:
+
+import react from 'react';
+//through inheritance
+class Demo extends react.Component{
+    render(){
+        return(
+           <div> 
+             <h1> Welcome to first react app </h1>
+           </div>
+       );  
+   }
+}
+export default Demo;
+
+// Class components life cycle:
+1. componentWillMount()
+2. componentDidMount()
+3. componentWillUpdate()
+4. render()
+5.componentWillUnmount()
+
+//
+function Demo(props){
+    var num = 25;
+    if(num>100){
+        var str = 'invalid'
+    }else{
+        str = 'valid'
+    }
+    return(
+        // JSX Fragment
+        <>
+
+            <h1>value of num is: {str}</h1>
+
+            <div>
+
+                <h4>Conditional Rendering by Ternary Operator:
+
+                     {(num)>100?'Valid':'Invalid'}
+
+                </h4>
+
+            </div>
+
+        </>
+
+    )
+
+}
+
+//
+render() {
+
+        return (
+
+            <div>
+
+                <h1>Increment Counter program</h1>
+
+                <h2>Current value: {this.state.prevVal}</h2>
+
+                <h3>Click on below button to update the count</h3>
+
+                <button onClick={()=>this.handleIncrement()}>Update count  </button><label>  {this.state.count}</label>
+
+            </div>
+
+        );
+
+    }
+
+// rcc - for create boylar of class component
+//rsf - for create boylar of function component
+
+props: props is the nothing but property pass by the parent elements, sent to the data parent to child element.
+
+
